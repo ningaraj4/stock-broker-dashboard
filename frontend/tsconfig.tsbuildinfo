@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/stocktable.tsx","./src/components/subscriptionlist.tsx","./src/hooks/usestockupdates.ts","./src/pages/dashboardpage.tsx","./src/pages/loginpage.tsx","./src/services/api.ts","./src/services/storage.ts","./src/services/websocket.ts","./src/types/index.ts"],"version":"5.9.3"}
