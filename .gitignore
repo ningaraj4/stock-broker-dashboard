@@ -1,0 +1,9 @@
+backend/stockbroker.db
+backend/stockbroker.db-shm
+backend/stockbroker.db-wal
+frontend/node_modules
+frontend/dist
+.gocache/
+*.exe
+*.log
+*.ps1
