@@ -4,7 +4,7 @@ services:
     env: docker
     dockerfilePath: ./Dockerfile
     plan: free
-    healthCheckPath: /api/stocks
+    healthCheckPath: /health
     envVars:
       - key: GIN_MODE
         value: release
