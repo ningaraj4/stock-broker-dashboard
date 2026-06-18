@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: stock-broker-dashboard
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /api/stocks
+    envVars:
+      - key: GIN_MODE
+        value: release
+      - key: DATABASE_PATH
+        value: stockbroker.db
+      - key: JWT_SECRET
+        generateValue: true

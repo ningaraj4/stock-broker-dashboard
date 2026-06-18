@@ -40,5 +40,13 @@ func SetupRouter(db *gorm.DB, authService *services.AuthService, stockService *s
 
 	router.GET("/ws", websocketHandler.Connect)
 
+	// Serve static files from the React build
+	router.Static("/assets", "./frontend/dist/assets")
+	
+	// Catch-all route for SPA client-side routing
+	router.NoRoute(func(c *gin.Context) {
+		c.File("./frontend/dist/index.html")
+	})
+
 	return router
 }
